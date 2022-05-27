@@ -1,0 +1,76 @@
+html {
+  overflow: hidden;
+
+  body {
+    overflow: auto;
+
+    .panels {
+      margin: auto;
+      width: 100%;
+      display: flex;
+      height: 40em;
+      overflow: hidden;
+      color: yellow;
+
+      .panel {
+        display: flex;
+        flex: 1;
+        background-size: cover;
+        flex-direction: column;
+        transition: all 0.07s;
+        font-size: 35px;
+        font-weight: 700;
+
+        :first-child {
+          transform: translateY(-100%);
+        }
+        :last-child {
+          transform: translateY(100%);
+        }
+
+        > * {
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .panel1 {
+        background-image: url(./elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+      }
+      .panel2 {
+        background-image: url(./jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
+      }
+      .panel3 {
+        background-image: url(./rosie-sun-1L71sPT5XKc-unsplash.jpg);
+      }
+      .panel4 {
+        background-image: url(./elti-meshau-moK7ZiiquG8-unsplash.jpg);
+        
+      }
+      .panel5 {
+        background-image: url(./nick-nice-gPm8h3DS1s4-unsplash.jpg);
+      }
+
+      .open {
+        color: greenyellow;
+        font-size: 35px;
+        flex: 5;
+      }
+
+      .open-active {
+        flex: 5;
+        font-size: 45px;
+        font-family: fantasy;
+        :first-child {
+          transform: translateY(0);
+        }
+        :last-child {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

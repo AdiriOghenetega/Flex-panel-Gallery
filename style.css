@@ -1,0 +1,109 @@
+html {
+  overflow: hidden;
+}
+
+html body {
+  overflow: auto;
+}
+
+html body .panels {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40em;
+  overflow: hidden;
+  color: yellow;
+}
+
+html body .panels .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.07s;
+  transition: all 0.07s;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+html body .panels .panel :first-child {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+html body .panels .panel :last-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+html body .panels .panel > * {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .panels .panel1 {
+  background-image: url(./elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+}
+
+html body .panels .panel2 {
+  background-image: url(./jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
+}
+
+html body .panels .panel3 {
+  background-image: url(./rosie-sun-1L71sPT5XKc-unsplash.jpg);
+}
+
+html body .panels .panel4 {
+  background-image: url(./elti-meshau-moK7ZiiquG8-unsplash.jpg);
+}
+
+html body .panels .panel5 {
+  background-image: url(./nick-nice-gPm8h3DS1s4-unsplash.jpg);
+}
+
+html body .panels .open {
+  color: greenyellow;
+  font-size: 35px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+html body .panels .open-active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  font-size: 45px;
+  font-family: fantasy;
+}
+
+html body .panels .open-active :first-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+html body .panels .open-active :last-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=style.css.map */
